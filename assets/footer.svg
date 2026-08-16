@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="50" viewBox="0 0 900 50">
+  <defs>
+    <filter id="fg" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="900" height="50" fill="#0A0B0D"/>
+  
+  <!-- Grid -->
+  <pattern id="fg2" width="24" height="24" patternUnits="userSpaceOnUse">
+    <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.015)" stroke-width="0.5"/>
+  </pattern>
+  <rect width="900" height="50" fill="url(#fg2)"/>
+  
+  <!-- Top border line -->
+  <line x1="40" y1="0" x2="860" y2="0" stroke="rgba(56,189,248,0.1)" stroke-width="1"/>
+  
+  <!-- Corner marks -->
+  <g font-family="JetBrains Mono, monospace" font-size="8" fill="rgba(56,189,248,0.2)">
+    <text x="16" y="30">+</text>
+    <text x="882" y="30">+</text>
+  </g>
+
+  <!-- Left: EOF -->
+  <text x="40" y="30" font-family="JetBrains Mono,monospace" font-size="10" fill="rgba(255,255,255,0.15)" letter-spacing="2">[EOF]</text>
+  
+  <!-- Center: Project name -->
+  <text x="450" y="26" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(56,189,248,0.3)" letter-spacing="3">HAOQI // MATHEMATICAL COMPUTATION WORKSPACE</text>
+  <text x="450" y="40" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.12)" letter-spacing="1">DESIGNED WITH PRECISION · 2026</text>
+  
+  <!-- Right: status -->
+  <circle cx="838" cy="25" r="3" fill="#22C55E" filter="url(#fg)"/>
+  <text x="848" y="29" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(34,197,94,0.5)">OK</text>
+</svg>

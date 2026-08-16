@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="70" viewBox="0 0 900 70">
+  <defs>
+    <filter id="kg" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="keyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E2128"/>
+      <stop offset="100%" stop-color="#151820"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="900" height="70" rx="6" fill="#0A0B0D" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  
+  <!-- Grid -->
+  <pattern id="kg2" width="24" height="24" patternUnits="userSpaceOnUse">
+    <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.015)" stroke-width="0.5"/>
+  </pattern>
+  <rect width="900" height="70" rx="6" fill="url(#kg2)"/>
+
+  <!-- Key: 1-6 -->
+  <g transform="translate(24,14)">
+    <rect width="36" height="28" rx="5" fill="url(#keyGrad)" stroke="rgba(0,229,255,0.3)" stroke-width="1"/>
+    <text x="12" y="19" font-family="JetBrains Mono,monospace" font-size="13" font-weight="700" fill="#00E5FF" filter="url(#kg)">1-6</text>
+    <text x="0" y="50" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.4)" letter-spacing="0.5">MODULES</text>
+  </g>
+
+  <!-- Separator -->
+  <line x1="88" y1="18" x2="88" y2="52" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+  
+  <!-- Key: T -->
+  <g transform="translate(108,14)">
+    <rect width="28" height="28" rx="5" fill="url(#keyGrad)" stroke="rgba(56,189,248,0.3)" stroke-width="1"/>
+    <text x="9" y="19" font-family="JetBrains Mono,monospace" font-size="13" font-weight="700" fill="#38BDF8" filter="url(#kg)">T</text>
+    <text x="-2" y="50" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.4)" letter-spacing="0.5">THEME</text>
+  </g>
+
+  <line x1="160" y1="18" x2="160" y2="52" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+
+  <!-- Key: S -->
+  <g transform="translate(180,14)">
+    <rect width="28" height="28" rx="5" fill="url(#keyGrad)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+    <text x="8" y="19" font-family="JetBrains Mono,monospace" font-size="13" font-weight="700" fill="#F59E0B" filter="url(#kg)">S</text>
+    <text x="-2" y="50" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.4)" letter-spacing="0.5">SOUND</text>
+  </g>
+
+  <line x1="232" y1="18" x2="232" y2="52" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+
+  <!-- Key: R -->
+  <g transform="translate(252,14)">
+    <rect width="28" height="28" rx="5" fill="url(#keyGrad)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+    <text x="8" y="19" font-family="JetBrains Mono,monospace" font-size="13" font-weight="700" fill="#22C55E" filter="url(#kg)">R</text>
+    <text x="-8" y="50" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.4)" letter-spacing="0.5">RAD/DEG</text>
+  </g>
+
+  <line x1="310" y1="18" x2="310" y2="52" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+
+  <!-- Key: ENTER -->
+  <g transform="translate(330,14)">
+    <rect width="60" height="28" rx="5" fill="url(#keyGrad)" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+    <text x="8" y="19" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#A855F7" filter="url(#kg)">ENTER</text>
+    <text x="6" y="50" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.4)" letter-spacing="0.5">EVALUATE</text>
+  </g>
+
+  <!-- Right side: description -->
+  <text x="870" y="30" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="10" fill="rgba(255,255,255,0.25)" letter-spacing="1">KEYBOARD-DRIVEN INTERFACE</text>
+  <text x="870" y="48" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.15)" letter-spacing="0.5">Full navigation without pointer interaction</text>
+</svg>

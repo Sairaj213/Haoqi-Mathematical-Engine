@@ -1,0 +1,6 @@
+{
+  "name": "Haoqi Mathematical Engine",
+  "description": "A high-precision retro-futurist mathematical computation and visual workspace inspired by haoqi.design, featuring expression evaluation, 2D function graphing, matrix laboratory, calculus solver, IEEE-754 bitwise visualizer, and tactile sound synthesizer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

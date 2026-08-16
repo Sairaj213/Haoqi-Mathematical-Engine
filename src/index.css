@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --bg-root: #F8F7F4;
+  --bg-plate: #FFFFFF;
+  --bg-plate-subtle: #F1EFEB;
+  --bg-hover: #E8E5DD;
+  --border-main: rgba(18, 18, 18, 0.12);
+  --border-subtle: rgba(18, 18, 18, 0.06);
+  --text-main: #121212;
+  --text-muted: #6B7280;
+  --text-accent: #0055FF;
+  --accent-glow: rgba(0, 85, 255, 0.15);
+  --grid-line: rgba(0, 0, 0, 0.035);
+  --crosshair: rgba(0, 0, 0, 0.25);
+  --font-mono: 'JetBrains Mono', 'Space Mono', monospace;
+}
+
+[data-theme="obsidian"] {
+  --bg-root: #0A0B0D;
+  --bg-plate: #121316;
+  --bg-plate-subtle: #181A1F;
+  --bg-hover: #22262E;
+  --border-main: rgba(255, 255, 255, 0.14);
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --text-main: #F4F4F5;
+  --text-muted: #8E929B;
+  --text-accent: #00E5FF;
+  --accent-glow: rgba(0, 229, 255, 0.18);
+  --grid-line: rgba(255, 255, 255, 0.04);
+  --crosshair: rgba(255, 255, 255, 0.25);
+}
+
+[data-theme="blueprint"] {
+  --bg-root: #081120;
+  --bg-plate: #0C1A30;
+  --bg-plate-subtle: #112340;
+  --bg-hover: #193259;
+  --border-main: rgba(56, 189, 248, 0.25);
+  --border-subtle: rgba(56, 189, 248, 0.12);
+  --text-main: #E0F2FE;
+  --text-muted: #7DD3FC;
+  --text-accent: #38BDF8;
+  --accent-glow: rgba(56, 189, 248, 0.22);
+  --grid-line: rgba(56, 189, 248, 0.06);
+  --crosshair: rgba(56, 189, 248, 0.4);
+}
+
+[data-theme="amber"] {
+  --bg-root: #0D0A05;
+  --bg-plate: #17120A;
+  --bg-plate-subtle: #21190D;
+  --bg-hover: #332614;
+  --border-main: rgba(245, 158, 11, 0.25);
+  --border-subtle: rgba(245, 158, 11, 0.12);
+  --text-main: #FDE68A;
+  --text-muted: #D97706;
+  --text-accent: #F59E0B;
+  --accent-glow: rgba(245, 158, 11, 0.25);
+  --grid-line: rgba(245, 158, 11, 0.05);
+  --crosshair: rgba(245, 158, 11, 0.4);
+}
+
+body {
+  background-color: var(--bg-root);
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  overflow-x: hidden;
+}
+
+/* Technical dot-matrix background */
+.bg-tech-grid {
+  background-image: 
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-root);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-main);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Monospace numeric alignment */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
